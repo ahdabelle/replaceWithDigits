@@ -60,7 +60,7 @@ String.prototype.replaceWithDigits = function(){
     
     var str = this;
     for(var i = 0; i < number.length; i++){
-        str = str.replace(number[i], digit[i]);
+        str = str.replace(number[i].toLowerCase().trim(), digit[i]);
     }
      
     return str;
